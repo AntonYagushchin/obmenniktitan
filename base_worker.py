@@ -53,7 +53,7 @@ def getNames(file_name):
 
 def getAll():
     final_message = ""
-    file_names = ["Base\\Group1.txt", "Base\\Group2.txt", "Base\\Group3.txt", "Base\\Group4.txt"]
+    file_names = ["Group1.txt", "Group2.txt", "Group3.txt", "Group4.txt"]
     names = ["*Заказчики*", "*Группа 2*", "*Группа 3*", "*Группа 4*"]
     counter = 0
     for name in file_names:
