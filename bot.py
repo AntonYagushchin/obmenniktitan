@@ -12,10 +12,10 @@ import keyboard
 import base_worker as DB
 import config
 
-group_1_path = "Base\\Group1.txt"
-group_2_path = "Base\\Group2.txt"
-group_3_path = "Base\\Group3.txt"
-group_4_path = "Base\\Group4.txt"
+group_1_path = "Group1.txt"
+group_2_path = "Group2.txt"
+group_3_path = "Group3.txt"
+group_4_path = "Group4.txt"
 
 # ----------init-----------
 bot = Bot(token=TOKEN)
