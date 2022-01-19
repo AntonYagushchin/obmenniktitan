@@ -10,10 +10,12 @@ class Poll_recover:
 
 
 class Mesage_recover:
-    def __init__(self, chat_id, message_id, text):
+    def __init__(self, chat_id, message_id, text, photo, caption):
         self.chat_id: List[int] = [*chat_id]
         self.message_id: List[int] = [*message_id]
         self.text: str = text
+        self.photo: str = photo
+        self.caption: str = caption
 
 TOKEN = "5073729215:AAHJXRSg-AmD7dD8RCiPyb3NSAfu7ZqjvGU"
 
@@ -63,11 +65,13 @@ OPTION_COUNTER4 = []
 
 
 
-LAST_MSG_GR1 = Mesage_recover([-1], [-1], "Еще не было сообщений в эту группу")
-LAST_MSG_GR2 = Mesage_recover([-1], [-1], "Еще не было сообщений в эту группу")
-LAST_MSG_GR3 = Mesage_recover([-1], [-1], "Еще не было сообщений в эту группу")
-LAST_MSG_GR4 = Mesage_recover([-1], [-1], "Еще не было сообщений в эту группу")
+LAST_MSG_GR1 = Mesage_recover([-1], [-1], "Еще не было сообщений в эту группу",None, None)
+LAST_MSG_GR2 = Mesage_recover([-1], [-1], "Еще не было сообщений в эту группу",None, None)
+LAST_MSG_GR3 = Mesage_recover([-1], [-1], "Еще не было сообщений в эту группу",None, None)
+LAST_MSG_GR4 = Mesage_recover([-1], [-1], "Еще не было сообщений в эту группу",None, None)
 
 
 
 EDIT_MSG_TEXT = ''
+
+TEMP_ID = -1
